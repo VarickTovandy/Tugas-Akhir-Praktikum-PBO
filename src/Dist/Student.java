@@ -32,12 +32,22 @@ public class Student extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        btnAddStudent = new javax.swing.JLabel();
-        btnShowStudent = new javax.swing.JLabel();
-        btnEditStudent = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        btnAddAdmin = new javax.swing.JLabel();
+        btnShowAdmin = new javax.swing.JLabel();
+        btnEditAdmin = new javax.swing.JLabel();
+        AddAdmin = new javax.swing.JLabel();
+        EditAdmin = new javax.swing.JLabel();
+        ShowAdmin = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
         btnBack = new javax.swing.JLabel();
         btnLogout = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         jPanel2.setBackground(new java.awt.Color(74, 170, 155));
 
@@ -57,81 +67,129 @@ public class Student extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\StudentRegistrationSystem.png")); // NOI18N
-
-        btnAddStudent.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\StudentAdd.png")); // NOI18N
-        btnAddStudent.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                btnAddStudentMouseDragged(evt);
-            }
+        btnAddAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnAddStudentMouseMoved(evt);
+                btnAddAdminMouseMoved(evt);
             }
         });
-        btnAddStudent.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAddAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAddStudentMouseClicked(evt);
+                btnAddAdminMouseClicked(evt);
             }
         });
 
-        btnShowStudent.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\StudentShow.png")); // NOI18N
-        btnShowStudent.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        btnShowAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnShowStudentMouseMoved(evt);
+                btnShowAdminMouseMoved(evt);
             }
         });
-        btnShowStudent.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnShowAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnShowStudentMouseClicked(evt);
+                btnShowAdminMouseClicked(evt);
             }
         });
 
-        btnEditStudent.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\StudentEdit.png")); // NOI18N
-        btnEditStudent.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        btnEditAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnEditStudentMouseMoved(evt);
+                btnEditAdminMouseMoved(evt);
             }
         });
-        btnEditStudent.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnEditStudentMouseClicked(evt);
+                btnEditAdminMouseClicked(evt);
             }
         });
+
+        AddAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\StudentAdd.png")); // NOI18N
+        AddAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                AddAdminMouseMoved(evt);
+            }
+        });
+        AddAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AddAdminMouseClicked(evt);
+            }
+        });
+
+        EditAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\StudentEdit.png")); // NOI18N
+        EditAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                EditAdminMouseMoved(evt);
+            }
+        });
+        EditAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EditAdminMouseClicked(evt);
+            }
+        });
+
+        ShowAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\StudentShow.png")); // NOI18N
+        ShowAdmin.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                ShowAdminMouseMoved(evt);
+            }
+        });
+        ShowAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ShowAdminMouseClicked(evt);
+            }
+        });
+
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\StudentRegistrationSystem.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(339, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addContainerGap(515, Short.MAX_VALUE)
+                .addComponent(jLabel29)
+                .addGap(515, 515, 515))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(btnAddStudent)
+                        .addComponent(btnAddAdmin)
                         .addGap(31, 31, 31)
-                        .addComponent(btnEditStudent, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(btnShowStudent)))
-                .addGap(307, 307, 307))
+                        .addComponent(btnEditAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AddAdmin))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(173, 173, 173)
+                        .addComponent(btnShowAdmin))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(EditAdmin)
+                        .addGap(70, 70, 70)
+                        .addComponent(ShowAdmin)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(70, 70, 70)
                 .addComponent(jLabel4)
-                .addGap(42, 42, 42)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnShowStudent)
-                    .addComponent(btnEditStudent)
-                    .addComponent(btnAddStudent))
-                .addContainerGap(153, Short.MAX_VALUE))
+                    .addComponent(btnShowAdmin)
+                    .addComponent(btnEditAdmin)
+                    .addComponent(btnAddAdmin))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ShowAdmin)
+                    .addComponent(EditAdmin)
+                    .addComponent(AddAdmin))
+                .addGap(122, 122, 122))
         );
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1370, 680));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 90, 1380, 680));
 
-        jPanel3.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel6.setBackground(new java.awt.Color(74, 170, 155));
 
-        btnBack.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\back (1).png")); // NOI18N
         btnBack.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnBackMouseMoved(evt);
@@ -143,7 +201,6 @@ public class Student extends javax.swing.JFrame {
             }
         });
 
-        btnLogout.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\LogOut.png")); // NOI18N
         btnLogout.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnLogoutMouseMoved(evt);
@@ -155,113 +212,245 @@ public class Student extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(btnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1034, Short.MAX_VALUE)
-                .addComponent(btnLogout)
-                .addGap(30, 30, 30))
+        jPanel8.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel8MouseEntered(evt);
+            }
+        });
+
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconBack.png")); // NOI18N
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Back");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel25)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnLogout)
-                    .addComponent(btnBack))
-                .addContainerGap(29, Short.MAX_VALUE))
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel25))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel7.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanel7MouseMoved(evt);
+            }
+        });
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel7MouseExited(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Logout");
+
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconLogout.png")); // NOI18N
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel20)
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel20))
+                .addGap(24, 24, 24))
+        );
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBack)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 976, Short.MAX_VALUE)
+                .addComponent(btnLogout)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel6Layout.createSequentialGroup()
+                            .addGap(29, 29, 29)
+                            .addComponent(btnLogout))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                            .addContainerGap(77, Short.MAX_VALUE)
+                            .addComponent(btnBack)))
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 90));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudentMouseClicked
+    private void btnAddAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddAdminMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddAdminMouseMoved
+
+    private void btnAddAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddAdminMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddAdminMouseClicked
+
+    private void btnShowAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowAdminMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowAdminMouseMoved
+
+    private void btnShowAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowAdminMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnShowAdminMouseClicked
+
+    private void btnEditAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditAdminMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditAdminMouseMoved
+
+    private void btnEditAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditAdminMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditAdminMouseClicked
+
+    private void AddAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddAdminMouseMoved
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnAddStudent.setCursor(curl);
+        AddAdmin.setCursor(curl);
+    }//GEN-LAST:event_AddAdminMouseMoved
+
+    private void AddAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddAdminMouseClicked
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        AddAdmin.setCursor(curl);
         this.dispose();
         AddStudent a = new AddStudent();
         a.setVisible(true);
-    }//GEN-LAST:event_btnAddStudentMouseClicked
+    }//GEN-LAST:event_AddAdminMouseClicked
 
-    private void btnShowStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowStudentMouseClicked
+    private void EditAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditAdminMouseMoved
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnShowStudent.setCursor(curl);
+        EditAdmin.setCursor(curl);
+    }//GEN-LAST:event_EditAdminMouseMoved
+
+    private void EditAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditAdminMouseClicked
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        EditAdmin.setCursor(curl);
+        this.dispose();
+        EditStudent a = new EditStudent();
+        a.setVisible(true);
+    }//GEN-LAST:event_EditAdminMouseClicked
+
+    private void ShowAdminMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowAdminMouseMoved
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        ShowAdmin.setCursor(curl);
+    }//GEN-LAST:event_ShowAdminMouseMoved
+
+    private void ShowAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowAdminMouseClicked
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        ShowAdmin.setCursor(curl);
         this.dispose();
         ShowStudent a = new ShowStudent();
         a.setVisible(true);
-    }//GEN-LAST:event_btnShowStudentMouseClicked
+    }//GEN-LAST:event_ShowAdminMouseClicked
 
-    private void btnEditStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditStudentMouseClicked
+    private void btnBackMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseMoved
         // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnEditStudent.setCursor(curl);
-        this.dispose();
-        EditMurid a = new EditMurid();
-        a.setVisible(true);
-    }//GEN-LAST:event_btnEditStudentMouseClicked
+    }//GEN-LAST:event_btnBackMouseMoved
 
     private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackMouseClicked
+
+    private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutMouseMoved
+
+    private void btnLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutMouseClicked
+
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
         btnBack.setCursor(curl);
         this.dispose();
         ProfileOption a = new ProfileOption();
         a.setVisible(true);
-    }//GEN-LAST:event_btnBackMouseClicked
+    }//GEN-LAST:event_jPanel8MouseClicked
 
-    private void btnBackMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseMoved
+    private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnBack.setCursor(curl);
-    }//GEN-LAST:event_btnBackMouseMoved
+        jPanel8.setCursor(curl);
+    }//GEN-LAST:event_jPanel8MouseEntered
 
-    private void btnEditStudentMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditStudentMouseMoved
+    private void jPanel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseMoved
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnEditStudent.setCursor(curl);
-    }//GEN-LAST:event_btnEditStudentMouseMoved
+        jPanel7.setCursor(curl);
+    }//GEN-LAST:event_jPanel7MouseMoved
 
-    private void btnAddStudentMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudentMouseDragged
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnAddStudent.setCursor(curl);
-    }//GEN-LAST:event_btnAddStudentMouseDragged
-
-    private void btnShowStudentMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShowStudentMouseMoved
-        // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnShowStudent.setCursor(curl);
-    }//GEN-LAST:event_btnShowStudentMouseMoved
-
-    private void btnAddStudentMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddStudentMouseMoved
-        // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnAddStudent.setCursor(curl);
-    }//GEN-LAST:event_btnAddStudentMouseMoved
-
-    private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
-        // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
-    }//GEN-LAST:event_btnLogoutMouseMoved
-
-    private void btnLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseClicked
-        // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
+        jPanel7.setCursor(curl);
         this.dispose();
         Login a = new Login();
         a.setVisible(true);
-    }//GEN-LAST:event_btnLogoutMouseClicked
+    }//GEN-LAST:event_jPanel7MouseClicked
+
+    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseEntered
+
+    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseExited
 
     /**
      * @param args the command line arguments
@@ -299,14 +488,24 @@ public class Student extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnAddStudent;
+    private javax.swing.JLabel AddAdmin;
+    private javax.swing.JLabel EditAdmin;
+    private javax.swing.JLabel ShowAdmin;
+    private javax.swing.JLabel btnAddAdmin;
     private javax.swing.JLabel btnBack;
-    private javax.swing.JLabel btnEditStudent;
+    private javax.swing.JLabel btnEditAdmin;
     private javax.swing.JLabel btnLogout;
-    private javax.swing.JLabel btnShowStudent;
+    private javax.swing.JLabel btnShowAdmin;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     // End of variables declaration//GEN-END:variables
 }
