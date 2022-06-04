@@ -38,6 +38,12 @@ public class AddAdmin extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         btnBack = new javax.swing.JLabel();
         btnLogout = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -55,7 +61,6 @@ public class AddAdmin extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(74, 170, 155));
 
-        btnBack.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\back (1).png")); // NOI18N
         btnBack.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnBackMouseMoved(evt);
@@ -67,7 +72,6 @@ public class AddAdmin extends javax.swing.JFrame {
             }
         });
 
-        btnLogout.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\LogOut.png")); // NOI18N
         btnLogout.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 btnLogoutMouseMoved(evt);
@@ -79,28 +83,118 @@ public class AddAdmin extends javax.swing.JFrame {
             }
         });
 
+        jPanel2.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel2MouseEntered(evt);
+            }
+        });
+
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconBack.png")); // NOI18N
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Back");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel25)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel25))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanel7MouseMoved(evt);
+            }
+        });
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel7MouseExited(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Logout");
+
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconLogout.png")); // NOI18N
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel20)
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel20))
+                .addGap(24, 24, 24))
+        );
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1029, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 976, Short.MAX_VALUE)
                 .addComponent(btnLogout)
-                .addGap(35, 35, 35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnLogout)
-                    .addComponent(btnBack))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGap(29, 29, 29)
+                            .addComponent(btnLogout))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addContainerGap(77, Short.MAX_VALUE)
+                            .addComponent(btnBack)))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, -1));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 90));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -210,7 +304,7 @@ public class AddAdmin extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(204, 204, 204)
                         .addComponent(jLabel5)))
-                .addContainerGap(438, Short.MAX_VALUE))
+                .addContainerGap(398, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,7 +348,7 @@ public class AddAdmin extends javax.swing.JFrame {
                 try{
                     try{
                         
-                        String sqll = "INSERT INTO murid(Nama, Username, Password)"
+                        String sqll = "INSERT INTO admin(Nama, Username, Password)"
                                 + "VALUES('"+nama+"', '"+username+"', '"+password+"')";
                         PreparedStatement p = c.prepareStatement(sqll);
                         p.executeUpdate(sqll);
@@ -288,33 +382,57 @@ public class AddAdmin extends javax.swing.JFrame {
 
     private void btnBackMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseMoved
         // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnBack.setCursor(curl);
     }//GEN-LAST:event_btnBackMouseMoved
 
     private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackMouseClicked
+
+    private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutMouseMoved
+
+    private void btnLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutMouseClicked
+
+    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
         btnBack.setCursor(curl);
         this.dispose();
         Admin a = new Admin();
         a.setVisible(true);
-    }//GEN-LAST:event_btnBackMouseClicked
+    }//GEN-LAST:event_jPanel2MouseClicked
 
-    private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
+    private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
-    }//GEN-LAST:event_btnLogoutMouseMoved
+        jPanel2.setCursor(curl);
+    }//GEN-LAST:event_jPanel2MouseEntered
 
-    private void btnLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseClicked
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
         // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
+        jPanel7.setCursor(curl);
         this.dispose();
         Login a = new Login();
         a.setVisible(true);
-    }//GEN-LAST:event_btnLogoutMouseClicked
+    }//GEN-LAST:event_jPanel7MouseClicked
+
+    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseEntered
+
+    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseExited
+
+    private void jPanel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseMoved
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        jPanel7.setCursor(curl);
+    }//GEN-LAST:event_jPanel7MouseMoved
 
     /**
      * @param args the command line arguments
@@ -358,12 +476,18 @@ public class AddAdmin extends javax.swing.JFrame {
     private javax.swing.JPasswordField inPassword;
     private javax.swing.JTextField inUsername;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
     private rojeru_san.complementos.RSButtonHover resetButton;
     private rojeru_san.complementos.RSButtonHover submitButton;
     // End of variables declaration//GEN-END:variables

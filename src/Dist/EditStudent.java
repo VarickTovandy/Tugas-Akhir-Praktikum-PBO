@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
  *
  * @author inter
  */
-public class EditMurid extends javax.swing.JFrame {
+public class EditStudent extends javax.swing.JFrame {
 
     /**
      * Creates new form EditMurid
      */
-    public EditMurid() {
+    public EditStudent() {
         initComponents();
     }
 
@@ -35,9 +35,6 @@ public class EditMurid extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel4 = new javax.swing.JPanel();
-        btnBack = new javax.swing.JLabel();
-        btnLogout = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -60,62 +57,23 @@ public class EditMurid extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         UpdateButton = new rojeru_san.complementos.RSButtonHover();
         DeleteButton = new rojeru_san.complementos.RSButtonHover();
+        jPanel4 = new javax.swing.JPanel();
+        btnBack = new javax.swing.JLabel();
+        btnLogout = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(74, 170, 155));
-
-        btnBack.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\back (1).png")); // NOI18N
-        btnBack.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnBackMouseMoved(evt);
-            }
-        });
-        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBackMouseClicked(evt);
-            }
-        });
-
-        btnLogout.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\LogOut.png")); // NOI18N
-        btnLogout.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                btnLogoutMouseMoved(evt);
-            }
-        });
-        btnLogout.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnLogoutMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(btnBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1032, Short.MAX_VALUE)
-                .addComponent(btnLogout)
-                .addGap(32, 32, 32))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnLogout)
-                    .addComponent(btnBack))
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Edit Student");
 
         jPanel1.setBackground(new java.awt.Color(74, 170, 155));
@@ -261,7 +219,7 @@ public class EditMurid extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 22)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\Search.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\Search.png")); // NOI18N
         jLabel7.setText("Nama");
         jLabel7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -275,7 +233,7 @@ public class EditMurid extends javax.swing.JFrame {
         });
 
         UpdateButton.setBackground(new java.awt.Color(255, 255, 255));
-        UpdateButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\Update (1).png")); // NOI18N
+        UpdateButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\Update.png")); // NOI18N
         UpdateButton.setColorHover(new java.awt.Color(255, 255, 255));
         UpdateButton.setColorText(new java.awt.Color(55, 56, 73));
         UpdateButton.setColorTextHover(new java.awt.Color(107, 106, 124));
@@ -292,7 +250,7 @@ public class EditMurid extends javax.swing.JFrame {
         });
 
         DeleteButton.setBackground(new java.awt.Color(255, 255, 255));
-        DeleteButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\Downloads\\Hapus.png")); // NOI18N
+        DeleteButton.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Praktikum PBO\\src\\Pictures\\Hapus.png")); // NOI18N
         DeleteButton.setColorHover(new java.awt.Color(255, 255, 255));
         DeleteButton.setColorText(new java.awt.Color(55, 56, 73));
         DeleteButton.setColorTextHover(new java.awt.Color(107, 106, 124));
@@ -313,49 +271,181 @@ public class EditMurid extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap(381, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel5Layout.createSequentialGroup()
-                                    .addComponent(DeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(UpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(138, 138, 138)))
-                            .addGap(379, 379, 379))
-                        .addGroup(javax.swing.GroupLayout.Alignment.CENTER, jPanel5Layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addGap(15, 15, 15)
-                            .addComponent(inNim, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(403, 403, 403)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(580, 580, 580))))
+                .addContainerGap(380, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(15, 15, 15)
+                        .addComponent(inNim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(380, 380, 380))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(504, 504, 504)
+                .addComponent(DeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(UpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(25, 25, 25)
                 .addComponent(jLabel5)
-                .addGap(27, 27, 27)
+                .addGap(15, 15, 15)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(inNim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel4))
                 .addGap(27, 27, 27)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(UpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DeleteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1370, 680));
+
+        jPanel4.setBackground(new java.awt.Color(74, 170, 155));
+
+        btnBack.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnBackMouseMoved(evt);
+            }
+        });
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackMouseClicked(evt);
+            }
+        });
+
+        btnLogout.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnLogoutMouseMoved(evt);
+            }
+        });
+        btnLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnLogoutMouseClicked(evt);
+            }
+        });
+
+        jPanel2.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel2MouseEntered(evt);
+            }
+        });
+
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconBack.png")); // NOI18N
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Back");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel25)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel25))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(74, 170, 155));
+        jPanel7.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanel7MouseMoved(evt);
+            }
+        });
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel7MouseExited(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 32)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Logout");
+
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\inter\\OneDrive\\Documents\\Semester 4\\Tugas Akhir Prak PBO\\TugasAkhir\\src\\Icons\\IconLogout.png")); // NOI18N
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel20)
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel20))
+                .addGap(24, 24, 24))
+        );
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBack)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 976, Short.MAX_VALUE)
+                .addComponent(btnLogout)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGap(29, 29, 29)
+                            .addComponent(btnLogout))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addContainerGap(77, Short.MAX_VALUE)
+                            .addComponent(btnBack)))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 90));
 
         pack();
         setLocationRelativeTo(null);
@@ -399,7 +489,7 @@ public class EditMurid extends javax.swing.JFrame {
                 inWali.setText(r.getString("Wali"));
                 inHpWali.setText(r.getString("HPWali"));
             }else{
-                System.out.println("Murid tidak ditemukan!");
+                JOptionPane.showMessageDialog(null, "Murid tidak ditemukan!");
             }
             s.close();
             r.close();
@@ -444,7 +534,7 @@ public class EditMurid extends javax.swing.JFrame {
             Statement s = c.createStatement(); 
             try{
                 String nim = inNim.getText().toString().trim();
-                String sql = "DELETE murid WHERE NoInduk = '"+nim+"";
+                String sql = "DELETE FROM murid WHERE NoInduk = '"+nim+"'";
                 PreparedStatement p = c.prepareStatement(sql);
                 p.executeUpdate(sql);
                 p.close();
@@ -470,33 +560,57 @@ public class EditMurid extends javax.swing.JFrame {
 
     private void btnBackMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseMoved
         // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnBack.setCursor(curl);
     }//GEN-LAST:event_btnBackMouseMoved
 
     private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
         // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnBack.setCursor(curl);
-        this.dispose();
-        Student a = new Student();
-        a.setVisible(true);
     }//GEN-LAST:event_btnBackMouseClicked
 
     private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
         // TODO add your handling code here:
-        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
     }//GEN-LAST:event_btnLogoutMouseMoved
 
     private void btnLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseClicked
         // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutMouseClicked
+
+    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
+        // TODO add your handling code here:
         Cursor curl = new Cursor(Cursor.HAND_CURSOR);
-        btnLogout.setCursor(curl);
+        jPanel2.setCursor(curl);
+        this.dispose();
+        Student a = new Student();
+        a.setVisible(true);
+    }//GEN-LAST:event_jPanel2MouseClicked
+
+    private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        jPanel2.setCursor(curl);
+    }//GEN-LAST:event_jPanel2MouseEntered
+
+    private void jPanel7MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseMoved
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        jPanel7.setCursor(curl);
+    }//GEN-LAST:event_jPanel7MouseMoved
+
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+        // TODO add your handling code here:
+        Cursor curl = new Cursor(Cursor.HAND_CURSOR);
+        jPanel7.setCursor(curl);
         this.dispose();
         Login a = new Login();
         a.setVisible(true);
-    }//GEN-LAST:event_btnLogoutMouseClicked
+    }//GEN-LAST:event_jPanel7MouseClicked
+
+    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseEntered
+
+    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel7MouseExited
 
     /**
      * @param args the command line arguments
@@ -515,20 +629,21 @@ public class EditMurid extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EditMurid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EditMurid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EditMurid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EditMurid.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EditMurid().setVisible(true);
+                new EditStudent().setVisible(true);
             }
         });
     }
@@ -551,13 +666,19 @@ public class EditMurid extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
 }
